@@ -1,6 +1,6 @@
 <div>
   <label for="price-search">Поиск лучшей цены:</label>
-  <input type="search" id="price-search" name="q">
+  <input type="search" id="price-search" name="q" [(ngModel)]="query">
 
-  <button>Искать</button>
+  <button (click)="submit()">Искать</button>
 </div>
